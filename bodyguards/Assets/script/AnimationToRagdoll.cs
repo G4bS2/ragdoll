@@ -36,6 +36,8 @@ public class AnimationToRagdoll : MonoBehaviour
         yield return new WaitForSeconds(respawnTime);
         ToggleRagdoll(true);
     }
+
+
     private void ToggleRagdoll(bool bisAnimating)
     {
         bIsRagdoll = !bisAnimating;
