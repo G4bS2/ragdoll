@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,7 +27,14 @@ public class AnimationToRagdoll : MonoBehaviour
         {
             Debug.Log("Colidiu com projetil");
             ToggleRagdoll(false);
+            StartCoroutine(GetBackUp());
         }
+    }
+
+    private IEnumerator GetBackUp()
+    {
+        yield return new WaitForSeconds(respawnTime);
+        ToggleRagdoll(true);
     }
     private void ToggleRagdoll(bool bisAnimating)
     {

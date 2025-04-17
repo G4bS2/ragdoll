@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myColider: {fileID: 147645592}
-  respawnTime: 30
+  respawnTime: 10
 --- !u!1001 &178590500
 PrefabInstance:
   m_ObjectHideFlags: 0
